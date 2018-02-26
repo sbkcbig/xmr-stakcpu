@@ -13,11 +13,11 @@
 prog="xmr-stak-cpu-centos6"
 prog_bin="/usr/local/bin/$prog"
 desc="xmr-stak-cpu-centos6 is an xmr blockchain program daemon"
+confile="/usr/local/bin/config.txt"
 
 start() {
     echo "starting xmr-stak-cpu"
-    /usr/local/bin/xmr-stak-cpu-centos6 >/dev/null &
-    echo 'success'
+    $prog_bin $confile >/dev/null &
 }
 stop() {
 
