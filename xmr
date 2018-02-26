@@ -1,0 +1,81 @@
+#!/bin/bash
+ 
+# For example: following config would generate link
+# S51myservice in rc2.d, rc3.d, rc4.d, rc5.d and 
+# K49myservice in rc0.d, rc1.d, rc6.d
+ 
+# Comments to support chkconfig on RedHat Linux
+# run level, start order, stop order
+ 
+# chkconfig: 2345 51 49 
+# description: Customized service written by Alvis.
+
+prog="xmr-stak-cpu-centos6"
+prog_bin="/usr/local/bin/$prog"
+desc="xmr-stak-cpu-centos6 is an xmr blockchain program daemon"
+
+start() {
+    echo "starting xmr-stak-cpu"
+    /usr/local/bin/xmr-stak-cpu-centos6 >/dev/null &
+    echo 'success'
+}
+stop() {
+
+    echo "Shutting down  $prog_bin"
+    pkill -f $prog_bin
+}
+restart() {
+    stop
+    start
+
+}
+status() {
+if [ -z $pid ]; then
+     pid=$(pgrep -f $prog_bin)
+  fi
+
+  if [ -z $pid ]; then
+    echo "$prog is NOT running."
+    return 1
+  else
+    echo "$prog is running (pid is $pid)."
+fi
+
+}
+
+case "$1" in 
+
+    start)
+
+        start
+
+        ;;
+
+    stop)
+
+        stop
+
+        ;;
+
+    restart)
+
+        restart
+
+        ;;
+
+    status)
+
+        status
+
+        ;;
+
+    *)
+
+        echo 'Usage: service myservice {start|status|stop|restart}'
+
+        echo ''
+
+        exit 1
+esac
+
+exit 0
