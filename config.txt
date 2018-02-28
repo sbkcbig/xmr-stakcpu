@@ -21,7 +21,7 @@
 "tls_secure_algo" : true,
 "tls_fingerprint" : "",
 "pool_address" : "xmr-asia1.nanopool.org:14444",
-"wallet_address" : "44jTedBfhpaVbhGmYQyQYxDDFjvchMYB8Do9uCUW8CA1ThAinuPS2PcjXqrT3anyZ22j7DEE74GkbVcQFyH2nNiC3cjU6PS.6b30ec4c16029426042a291c25269a132b9b87a2b116a9a03c3f30c65b67b158.pujinte_182_36/10597095@qq.com",
+"wallet_address" : "",
 "pool_password" : "x",
 "call_timeout" : 10,
 "retry_time" : 10,
