@@ -7,5 +7,5 @@ xmr门罗币自动挖矿程序与脚本<br>
 #chkconfig --add xmr<br>  
 5：config.txt填写上自己的钱包地址哦。<br>  
 
-注：改代码已经改了捐献为
+注：改代码已经改了捐献为<br>  
 constexpr double fDevDonationLevel = 0.01 / 100.0;
