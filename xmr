@@ -17,6 +17,7 @@ confile="/usr/local/bin/config.txt"
 
 start() {
     echo "starting xmr-stak-cpu"
+    cd /usr/local/bin
     $prog_bin $confile >/dev/null &
 }
 stop() {
