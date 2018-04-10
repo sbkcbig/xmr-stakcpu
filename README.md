@@ -1,4 +1,4 @@
-# xmr-auto-stak
+# xmr-auto-stak 2.4版本的，2018年4月6日硬分叉后的版本
 xmr门罗币自动挖矿程序与脚本<br>  
 1：For centos 6，可能会缺少一些库，因此在运行之前需要运行如下命令<br>  
 #yum -y install hwloc ftp libmicrohttpd gnutls<br>  
