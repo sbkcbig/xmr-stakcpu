@@ -8,4 +8,7 @@ xmr门罗币自动挖矿程序与脚本<br>
 5：config.txt填写上自己的钱包地址哦。<br>  
 
 注：改代码已经改了捐献为<br>  
-constexpr double fDevDonationLevel = 0.01 / 100.0;
+constexpr double fDevDonationLevel = 0.01 / 100.0; <br>
+pools.txt-------------->你的矿池的地址，我选择的是亚洲的地址，"wallet_address"你要填写好自己的钱包地址<br>
+cpu.txt---------------->几颗CPU就填写几个数字<br>
+config.txt------------->默认参数配置<br>
