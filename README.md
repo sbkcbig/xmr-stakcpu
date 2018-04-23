@@ -11,3 +11,7 @@ constexpr double fDevDonationLevel = 0.01 / 100.0; <br>
 pools.txt-------------->你的矿池的地址，我选择的是亚洲的地址，"wallet_address"你要填写好自己的钱包地址<br>
 cpu.txt---------------->几颗CPU就填写几个数字<br>
 config.txt------------->默认参数配置<br>
+
+#sh -c 'echo "* soft memlock 262144" >> /etc/security/limits.conf'  <br>
+#sh -c 'echo "* hard memlock 262144" >> /etc/security/limits.conf' <br>
+#sysctl -w vm.nr_hugepages=128 <br>
